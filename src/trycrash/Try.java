@@ -100,6 +100,7 @@ public class Try {
 	}
 	
 	private static TryCrashException getErr(Exception e) {
+		
 		return new TryCrashException(msg, e);
 	}
 	
