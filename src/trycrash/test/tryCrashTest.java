@@ -5,11 +5,7 @@ import static org.junit.Assert.assertTrue;
 import static trycrash.Try.tryCatch;
 import static trycrash.Try.tryCrash;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.junit.Test;
 
@@ -79,6 +75,7 @@ public class tryCrashTest {
 		assertEquals(1, d, 0.0001); 
 	}
 
+	@SuppressWarnings({ "unused" })
 	@Test
 	public void testCrashFail() {
 		
