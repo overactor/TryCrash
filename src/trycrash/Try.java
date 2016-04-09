@@ -39,7 +39,7 @@ public class Try {
 	public static <T> Optional<T> tryCatch(ThrowingSupplier<T> code) {
 		
 		try {
-			return Optional.of(code.exec());
+			return Optional.ofNullable(code.exec());
 		} catch (Exception e) {
 			return Optional.empty();
 		}
